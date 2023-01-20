@@ -6,6 +6,7 @@ body {
     box-sizing: border-box;
     font-size: 62.5%;
     background-color: var(--bg-color);
+    font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,PingFang SC,Microsoft YaHei,Source Han Sans SC,Noto Sans CJK SC,WenQuanYi Micro Hei,sans-serif;
 }
 
 div {

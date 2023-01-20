@@ -1,7 +1,32 @@
 .footer {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7rem;
+    font-size: 1.3rem;
     grid-area: footer;
     box-shadow: 0.8rem 0.8rem 1.4rem var(--shadow-dark),
         -0.2rem -0.2rem 1.8rem var(--shadow-light);
     border-radius: 3rem;
     border: 1px solid var(--shadow-light);
+
+    .footer-item {
+        color: #8590a6;
+        cursor: pointer;
+
+        a {
+            text-decoration: none;
+            color: #8590a6;
+
+            &:hover {
+                color: #175199;
+            }
+        }
+
+        img {
+            vertical-align: middle;
+        }
+    }
 }

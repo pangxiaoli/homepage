@@ -18,6 +18,7 @@ interface IConfig {
 	site?: Array<ILink>
 
 	footer?: {
+		year: number,
 		copyRight?: string,
 		icp?: string,
 		gunan?: string, 
@@ -35,9 +36,10 @@ const config: IConfig = {
 	},
 
 	footer: {
+		year: 2023,
 		copyRight: 'pangxiaoli',
 		icp: '京ICP备2021012262号-2',
-		gunan: '11010802035180'
+		gunan: '京公网安备11010802035180'
 	}
 };
 
