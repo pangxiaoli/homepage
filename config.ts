@@ -31,7 +31,7 @@ const config: IConfig = {
 	subTitle: 'subtitle',
 
 	user: {
-		avater: 'public/head.jpg',
+		avater: '/img/head.jpg',
 		name: 'pangxiaoli',
 	},
 

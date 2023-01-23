@@ -1,4 +1,5 @@
 import useConfig from '../../hooks/useConfig';
+import beianIcon from '../../static/img/beian.png';
 import './index.less';
 
 const Footer = () => {
@@ -12,7 +13,7 @@ const Footer = () => {
 			</div>
 			<div className="footer-item">
 				<a href={'http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=' + useConfig( 'footer' ).gunan.match( /\d.*/ )[0]} target="_blank" rel="noopener noreferrer">
-					<img src="../../public/beian.png" alt="beian" />
+					<img src={beianIcon} alt="beian" />
 					{useConfig( 'footer' ).gunan}
 				</a>
 			</div>
