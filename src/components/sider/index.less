@@ -7,6 +7,25 @@
     display: flex;
     flex-direction: column;
 
+    .avater {
+        height: 20rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            height: 9rem;
+            width: 9rem;
+            border-radius: 50%;
+            transition: all .4s ease-in-out;
+            cursor: pointer;
+
+            &:hover {
+                transform: rotate(360deg);
+            }
+        }
+    }
+
     .theme-switcher {
         display: flex;
         align-items: center;
