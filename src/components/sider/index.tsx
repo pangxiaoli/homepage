@@ -18,11 +18,12 @@ const Sider = () => {
 			<div className="avater">
 				<img src={useConfig( 'user' ).avater} alt="avater" />
 			</div>
+			<div className="user-name">{useConfig( 'user' ).name}</div>
 			<div className="theme-switcher" onClick={handleSwitchTheme}>
 				<FontAwesomeIcon icon={theme === 'light' ? faMoon : faSun} />
 			</div>
 		</div>
-	) ;
+	);
 };
 
 export default Sider;

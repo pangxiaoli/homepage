@@ -1,15 +1,15 @@
 interface ILink {
-	icon?: string | URL,
+	icon?: string,
 	title: string,
-	uri?: string | URL,	
+	uri?: string,	
 }
 
-interface IConfig {
+export interface IConfig {
 	title: string,
 	subTitle?: string,
 
 	user: {
-		avater: URL | string,
+		avater: string,
 		name?: string,
 
 		social?: Array<ILink>

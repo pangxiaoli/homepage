@@ -1,18 +1,11 @@
-import config from '../../config';
+import config, { IConfig } from '../../config';
 
 /**
  * 用于读取配置
  * @param attribute 
  * @returns 
  */
-const useConfig = ( attribute?: string ) => {
-	if ( !attribute ) {
-		return config;
-	}
-
-	// TODO
-	// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-	// @ts-ignore
+const useConfig = <T extends keyof IConfig>( attribute: T ): IConfig[T] => {
 	return config[attribute];
 };
 
