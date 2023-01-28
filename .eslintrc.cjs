@@ -86,7 +86,7 @@ module.exports = {
 			'error', 
 			'always',
 			{ 
-				'exceptions': ['empty', '{}'] 
+				'exceptions': ['empty', '{}', '()'] 
 			}
 		],
 		'space-infix-ops': [

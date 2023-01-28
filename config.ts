@@ -1,7 +1,11 @@
-interface ILink {
-	icon?: string,
-	title: string,
-	uri?: string,	
+import { faFigma, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope, IconDefinition } from '@fortawesome/free-solid-svg-icons';
+
+export interface ILink {
+	icon?: IconDefinition,
+	title?: string,
+	uri: string,
+	shape?: 'rect' | 'circle',
 }
 
 export interface IConfig {
@@ -33,6 +37,21 @@ const config: IConfig = {
 	user: {
 		avater: '/img/head.jpg',
 		name: 'pangxiaoli',
+		social: [
+			{
+				icon: faGithub,
+				uri: 'http://github.com/pangxiaoli',
+				shape: 'circle'
+			},
+			{
+				icon: faEnvelope,
+				uri: 'mailto:qiubit@qiubit.cc',
+			},
+			{
+				icon: faFigma,
+				uri: 'https://figma.com/',
+			}
+		]
 	},
 
 	footer: {
