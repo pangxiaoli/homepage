@@ -25,8 +25,8 @@ const Sider = () => {
 					useConfig( 'user' )?.social?.map(( i, index ) => <Link key={index} size='small' data={i} showTitle={false}/> )
 				}
 			</div>
-			<div className="theme-switcher" onClick={handleSwitchTheme}>
-				<FontAwesomeIcon icon={theme === 'light' ? faMoon : faSun} />
+			<div className="theme-switcher">
+				<FontAwesomeIcon icon={theme === 'light' ? faMoon : faSun} onClick={handleSwitchTheme}/>
 			</div>
 		</div>
 	);
