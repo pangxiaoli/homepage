@@ -10,8 +10,9 @@
 - 📌 Ts + React 支持完整的类型提示
 
 ## 🗺️ 截图
-![](./public/img/1.png)![](./public/img/2.png)
-![](./public/img/3.png)
+![light](public/img/1.png)
+![dark](public/img/2.png)
+![移动端](public/img/3.png)
 
 ## 开始
 ```
