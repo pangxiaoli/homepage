@@ -22,7 +22,7 @@ const Sider = () => {
 			<div className="user-name">{useConfig( 'user' ).name}</div>
 			<div className="socials">
 				{
-					useConfig( 'user' )?.social?.map(( i, index ) => <Link key={index} size='small' data={i}/> )
+					useConfig( 'user' )?.social?.map(( i, index ) => <Link key={index} size='small' data={i} showTitle={false}/> )
 				}
 			</div>
 			<div className="theme-switcher" onClick={handleSwitchTheme}>

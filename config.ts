@@ -1,5 +1,5 @@
-import { faFigma, faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope, IconDefinition } from '@fortawesome/free-solid-svg-icons';
+import { faFigma, faGithub, faReddit } from '@fortawesome/free-brands-svg-icons';
+import { faBlog, faBook, faEnvelope, faPenRuler, IconDefinition } from '@fortawesome/free-solid-svg-icons';
 
 export interface ILink {
 	icon?: IconDefinition,
@@ -31,8 +31,8 @@ export interface IConfig {
 
 
 const config: IConfig = {
-	title: 'title',
-	subTitle: 'subtitle',
+	title: 'Qiubitの修行路',
+	subTitle: '路漫漫其修远兮，吾将上下而求索!',
 
 	user: {
 		avater: '/img/head.jpg',
@@ -41,18 +41,47 @@ const config: IConfig = {
 			{
 				icon: faGithub,
 				uri: 'http://github.com/pangxiaoli',
-				shape: 'circle'
+				shape: 'circle',
+				title: 'github'
 			},
 			{
 				icon: faEnvelope,
 				uri: 'mailto:qiubit@qiubit.cc',
+				title: 'mailto'
 			},
 			{
 				icon: faFigma,
 				uri: 'https://figma.com/',
+				title: 'figma'
+			},
+			{
+				icon: faReddit,
+				uri: 'https://reddit.com/',
+				title: 'reddit'
 			}
 		]
 	},
+
+	site: [
+		{
+			icon: faBook,
+			uri: 'http://ref.qiubit.cc',
+			title: 'ref',
+			shape: 'rect',
+		},
+		{
+			icon: faPenRuler,
+			uri: 'https://draw.qiubit.cc',
+			title: 'draw',
+			shape: 'rect',
+		},
+		{
+			icon: faBlog,
+			uri: 'https://blog.pangxiaoli.com',
+			title: 'blog',
+			shape: 'rect',
+		},
+	],
 
 	footer: {
 		year: 2023,
